@@ -8,9 +8,9 @@
  * @package 	WooCommerce/Templates
  * @version     1.6.4
  */
+wpv_page_header($page_header_placed, "Singles Events"); ?>
 
-get_header('shop'); ?>
-
+<?php get_header('shop'); ?>
 	<?php
 		/**
 		 * woocommerce_before_main_content hook

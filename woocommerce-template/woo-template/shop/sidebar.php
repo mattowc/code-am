@@ -7,4 +7,4 @@
  * @version     1.6.4
  */
 
-get_sidebar('shop'); ?>
+?>
