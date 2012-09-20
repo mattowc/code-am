@@ -110,7 +110,7 @@
 		<div class="boxed-layout">
 			<div class="page-dash-wrapper">
 				
-					<div class="fixed-header-box">
+					<div class="fixed-header-box" style="height: 150px;">
 						<header class="main-header">
 							<div class="limit-wrapper">
 								<div id="header-search"><?php get_search_form() ?></div>
@@ -221,3 +221,5 @@
 								<?php if($has_header_slider && wpv_get_option('phone-num-top') != ''): ?>
 									<div id="phone-num"><?php echo do_shortcode(wpv_get_option('phone-num-top'))?></div>
 								<?php endif ?>
+								<?php wpv_page_header($page_header_placed, "Singles Events"); ?>
+

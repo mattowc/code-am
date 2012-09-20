@@ -8,9 +8,9 @@
  * @package 	WooCommerce/Templates
  * @version     1.6.4
  */
+get_header('shop');
 wpv_page_header($page_header_placed, "Singles Events"); ?>
 
-<?php get_header('shop'); ?>
 	<?php
 		/**
 		 * woocommerce_before_main_content hook
@@ -20,24 +20,6 @@ wpv_page_header($page_header_placed, "Singles Events"); ?>
 		 */
 		do_action('woocommerce_before_main_content');
 	?>
-
-		<h1 class="page-title">
-			<?php if ( is_search() ) : ?>
-				<?php
-					printf( __( 'Search Results: &ldquo;%s&rdquo;', 'woocommerce' ), get_search_query() );
-					if ( get_query_var( 'paged' ) )
-						printf( __( '&nbsp;&ndash; Page %s', 'woocommerce' ), get_query_var( 'paged' ) );
-				?>
-			<?php elseif ( is_tax() ) : ?>
-				<?php echo single_term_title( "", false ); ?>
-			<?php else : ?>
-				<?php
-					$shop_page = get_post( woocommerce_get_page_id( 'shop' ) );
-
-					echo apply_filters( 'the_title', ( $shop_page_title = get_option( 'woocommerce_shop_page_title' ) ) ? $shop_page_title : $shop_page->post_title );
-				?>
-			<?php endif; ?>
-		</h1>
 
 		<?php do_action( 'woocommerce_archive_description' ); ?>
 
