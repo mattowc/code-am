@@ -481,3 +481,28 @@ input[type="submit"].btn.btn-mini {
 .btn:visited {
   color: #FFF !important;
 }
+
+/* WooCommerce  -- Fixes to WooCommerce reliant classes and IDs */
+.no-page-header .page-header {
+padding: 20px 0;
+}
+.woocommerce_tabs {
+  display: none !important;
+}
+div.quantity {
+  display: none !important;
+}
+
+a.button.alt, button.button.alt, input.button.alt, #respond input#submit.alt, #content input.button.alt {
+
+  font-size: 16px !important;
+}
+
+.actions .button, .actions input.button {
+  border: 0 !important;
+  font-size: 16px !important;
+}
+
+.place-order .button, .place-order input.button {
+  border: 1px solid #B0B0B0
+}
