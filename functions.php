@@ -72,4 +72,31 @@ function jm_store_featured( $post_id )
 	update_post_meta( $post_id, 'jm_featured', $data);
 }
 add_action('save_post', 'jm_store_featured');
+
+/*
+ * Changes cart text
+ */
+function jm_change_cart_text(  )
+{
+	return 'Register';
+}
+add_filter('single_add_to_cart_text', 'jm_change_cart_text' );
+
+function jm_change_cart_country()
+{
+	return 'US';
+}
+add_filter( 'default_checkout_country', 'jm_change_cart_country' );
+
+function jm_change_cart_state()
+{
+	return 'UT';
+}
+add_filter( 'default_checkout_state', 'jm_change_cart_state' );
+
+function jm_change_free_text( $price )
+{
+	return '$2.00 cover charge at the door';
+}
+add_filter( 'woocommerce_free_price_html', '')
 ?>

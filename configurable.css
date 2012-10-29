@@ -867,3 +867,8 @@ padding-top: 7px !important;
 .services-inside {
 padding-top: 0px !important;
 }
+
+/* Adde by Jonathon M. to fix woo issue */
+.button .alt {
+	color: #FFF !important;
+}

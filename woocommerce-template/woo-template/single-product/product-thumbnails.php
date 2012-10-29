@@ -38,7 +38,9 @@ global $post, $woocommerce;
 			if ( ( $loop + 1 ) % $columns == 0 )
 				$classes[] = 'last';
 
-			printf( '<a href="%s" title="%s" rel="thumbnails" class="%s">%s</a>', wp_get_attachment_url( $attachment->ID ), esc_attr( $attachment->post_title ), implode(' ', $classes), wp_get_attachment_image( $attachment->ID, apply_filters( 'single_product_small_thumbnail_size', 'shop_thumbnail' ) ) );
+			$classes[] = 'lightbox';
+
+			printf( '<a href="%s" something="%s" rel="thumbnails" class="%s">%s</a>', wp_get_attachment_url( $attachment->ID ), esc_attr( $attachment->post_title ), implode(' ', $classes), wp_get_attachment_image( $attachment->ID, apply_filters( 'single_product_small_thumbnail_size', 'shop_thumbnail' ) ) );
 
 			$loop++;
 
