@@ -8,8 +8,7 @@
  * @package 	WooCommerce/Templates
  * @version     1.6.4
  */
-get_header('shop');
-wpv_page_header($page_header_placed, "Singles Events"); ?>
+get_header('shop'); ?>
 
 	<?php
 		/**

@@ -96,7 +96,14 @@ add_filter( 'default_checkout_state', 'jm_change_cart_state' );
 
 function jm_change_free_text( $price )
 {
-	return '$2.00 cover charge at the door';
+	return '$0.00';
 }
-add_filter( 'woocommerce_free_price_html', '')
+add_filter( 'woocommerce_free_price_html', 'jm_change_free_text');
+
+function jm_add_email_text()
+{
+	echo '<p>If this is for an event, be sure to print your receipt and bring it with you to the event. </p>';
+}
+add_action( 'woocommerce_email_before_order_table', 'jm_add_email_text' );
+
 ?>
