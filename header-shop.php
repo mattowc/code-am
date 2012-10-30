@@ -20,7 +20,7 @@ endif;
 <div class="pane main-pane">
 	<div class="row">
 		<?php if(is_archive()): $category = get_the_category( $post->ID ); ?>
-		<?php wpv_page_header($page_header_placed, 'Events & Services'); ?> 
+		<?php wpv_page_header($page_header_placed); ?> 
 		<?php else: wpv_page_header($page_header_placed); endif; ?>
 		<div class="page-outer-wrapper">
 			<?php do_action('wpv_start_page'); ?>

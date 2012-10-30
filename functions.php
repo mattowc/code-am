@@ -106,4 +106,14 @@ function jm_add_email_text()
 }
 add_action( 'woocommerce_email_before_order_table', 'jm_add_email_text' );
 
+register_sidebar(array(
+					'id' => 'jm_sidebar',
+					'name' => 'jm_sidebar',
+					'description' => 'For Testimonials',
+					'before_widget' => '<section id="%1$s" class="widget %2$s">',
+					'after_widget' => '</section>',
+					'before_title' => apply_filters('wpv_before_widget_title', '<h4 class="widget-title">', 'body'),
+					'after_title' => apply_filters('wpv_after_widget_title', '</h4>', 'body'),
+				));
+
 ?>

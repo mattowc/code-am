@@ -697,12 +697,18 @@ function wpv_page_header_inner($title) {
 	$needButtons = is_singular(array('post','portfolio')) && current_theme_supports('wpv-ajax-siblings');
 	$description = get_post_meta($post->ID, 'description', true);
 
+
+
 	if ($needHeaderTitle || $needButtons):
 		?><header class="page-header <?php echo $needButtons ? 'has-buttons':'' ?>">
 			<div class="limit-wrapper">
 				<?php if($needHeaderTitle): ?>
 					<h1>
-						<span class="title"><?php echo $title;?></span>
+						<span class="title">
+							<?php if(is_archive()): wp_title("", true); else: ?>
+							<?php echo $title;?>
+							<?php endif; ?>
+						</span>
 						<?php if(!empty($description)): ?>
 							<span class="desc" style="<?php wpv_title_description_style() ?>"><?php echo $description ?></span>
 						<?php endif ?>

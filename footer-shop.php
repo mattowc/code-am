@@ -5,6 +5,7 @@
  * @author Jonathon McDonald <jon@onewebcentric.com>
  */
 ?>
+
 <?php if(!wpv_is_reduced_response()): ?>
 			</div>
 		</div>
