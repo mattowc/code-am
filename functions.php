@@ -80,7 +80,7 @@ function jm_change_cart_text(  )
 {
 	return 'Register';
 }
-add_filter('single_add_to_cart_text', 'jm_change_cart_text' );
+add_filter('add_to_cart_text', 'jm_change_cart_text' );
 
 function jm_change_cart_country()
 {

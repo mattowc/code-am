@@ -489,8 +489,9 @@ padding: 20px 0;
 .woocommerce_tabs {
   display: none !important;
 }
-div.quantity {
-  display: none !important;
+
+.quantity .plus, .quantity .minus {
+  border: 1px solid !important
 }
 
 a.button.alt, button.button.alt, input.button.alt, #respond input#submit.alt, #content input.button.alt {
