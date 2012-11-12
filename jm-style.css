@@ -55,6 +55,146 @@
 	width: 100%;
 }
 
+.jm-press-p
+{
+  padding-left: 15px;
+}
+
+.jm-press-blurb
+{
+  border-left: 1px solid #DDD;
+}
+
+.center
+{
+  text-align: center;
+}
+
+/**
+ * Logo sprite
+ */
+a.abc
+{
+  width: 115px;
+  height: 79px;
+  background: url('wpv_common/assets/images/press-sprite.png') no-repeat -155px -80px;
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+a.abc:hover
+{
+  background-position: -155px 0;
+}
+
+a.fox
+{
+  width: 56px;
+  height: 80px;
+  background: url('wpv_common/assets/images/press-sprite.png') no-repeat -88px -80px;
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+a.fox:hover
+{
+  background-position: -88px 0;
+}
+
+a.ksl
+{
+  width: 80px;
+  height: 80px;
+  background: url('wpv_common/assets/images/press-sprite.png') no-repeat 0 -80px;
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+a.ksl:hover
+{
+  background-position: 0 0;
+}
+
+a.sl
+{
+  width: 200px;
+  height: 80px;
+  background: url('wpv_common/assets/images/press-sprite.png') no-repeat -425px -80px;
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+a.sl:hover
+{
+  background-position: -425px 0;
+}
+
+a.slnow
+{
+  width: 145px;
+  height: 80px;
+  background: url('wpv_common/assets/images/press-sprite.png') no-repeat -273px -80px;
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+a.slnow:hover
+{
+  background-position: -273px 0;
+}
+
+i.abc
+{
+  width: 115px;
+  height: 79px;
+  background: url('wpv_common/assets/images/press-sprite.png') no-repeat -155px 0px;
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+i.fox
+{
+  width: 56px;
+  height: 80px;
+  background: url('wpv_common/assets/images/press-sprite.png') no-repeat -88px 0px;
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+i.ksl
+{
+  width: 80px;
+  height: 80px;
+  background: url('wpv_common/assets/images/press-sprite.png') no-repeat 0 0px;
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+i.sl
+{
+  width: 200px;
+  height: 80px;
+  background: url('wpv_common/assets/images/press-sprite.png') no-repeat -425px 0px;
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+i.slnow
+{
+  width: 145px;
+  height: 80px;
+  background: url('wpv_common/assets/images/press-sprite.png') no-repeat -273px 0px;
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+/**
+ * Bootstrap fix
+ */
+.btn-primary:visited
+{
+  color: #FFF;
+}
 /*!
  * Bootstrap v2.1.1
  *
@@ -479,7 +619,6 @@ input[type="submit"].btn.btn-mini {
 }
 
 .btn:visited {
-  color: #FFF !important;
 }
 
 /* WooCommerce  -- Fixes to WooCommerce reliant classes and IDs */
