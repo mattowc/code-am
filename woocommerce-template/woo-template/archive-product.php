@@ -56,6 +56,8 @@ get_header('shop'); ?>
 
 		<?php endif; ?>
 
+		<?php get_sidebar('jm_sidebar (right)'); ?>
+
 		<div class="clear"></div>
 
 		<?php

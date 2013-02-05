@@ -647,3 +647,15 @@ a.button.alt, button.button.alt, input.button.alt, #respond input#submit.alt, #c
 .place-order .button, .place-order input.button {
   border: 1px solid #B0B0B0
 }
+
+ul.products {
+  width: 65%;
+  float: left;
+}
+
+@media (max-width: 700px) {
+  ul.products {
+    width: 100%;
+    float: left;
+  }
+}
