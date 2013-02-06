@@ -653,6 +653,9 @@ ul.products {
   float: left;
 }
 
+ul.products li.product {
+  width: 45.05%;
+}
 @media (max-width: 700px) {
   ul.products {
     width: 100%;
