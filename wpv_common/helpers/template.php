@@ -369,8 +369,13 @@ function wpv_share($context) {
 	?>
 	<div class="clearfix <?php echo apply_filters('wpv_share_class', 'share-btns')?>">
 		<?php if(wpv_get_option("share-$context-pinterest")): ?>
+			<?php if(has_post_thumbnail()): ?>
+				<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+			<?php else: ?>
+				<?php $url = get_bloginfo('url') . '/wp-content/uploads/2012/10/AmberMay.jpg'; ?>
+			<?php endif; ?>
 			<div class="fl">
-				<a href="http://pinterest.com/pin/create/button/" class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a>
+				<a href="http://pinterest.com/pin/create/button/?url=<?php echo urlencode(get_permalink()); ?>&media=<?php echo $url; ?>" class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a>
 				<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
 			</div>
 		<?php endif	?>
