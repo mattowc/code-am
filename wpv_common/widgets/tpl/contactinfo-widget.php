@@ -23,6 +23,9 @@ if ($title)
 		<?php if(!empty($field['value']) && $name != 'title'): ?>
 			<li>
 				<?php if(in_array($name, array_keys($available_icons))): ?>
+					<?php if($name == 'mail'): ?>
+						<?php $field['value'] = '<a href="mailto:' . $field['value'] . '">' . $field['value'] . '</a>'; ?>
+					<?php endif; ?>
 					<?php echo do_shortcode('[icon style="'.$available_icons[$name].'" color="'.$color.'"]'.$field['value'].'[/icon]')?>
 				<?php else: ?>
 					<?php echo do_shortcode('[icon]'.$field['value'].'[/icon]')?>
